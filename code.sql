@@ -1,8 +1,4 @@
 
-<<<<<<< HEAD
-=======
-
->>>>>>> fae28b8a7b979e6be80549cea14a12026d58dcab
 SET TIMING ON;
 --query 1
 select year,count(*) as TOTAL_FEMALE_CANDIDATE

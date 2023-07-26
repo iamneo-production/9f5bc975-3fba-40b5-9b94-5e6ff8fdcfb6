@@ -6,7 +6,7 @@ set timing on;
  select year,count(*)
  from election where cand_sex='F'group by year;
 
---2 total candidates who paricipated in election at each state and year
+--2 total candidates who  paricipated in election at each state and year
 select st_name ,year,count(*)
 from election 
 group by year,st_name

@@ -3,8 +3,8 @@ set timing on;
 
 --SQL query to find total count of female participated in each year
 
- select year,count(*)
- from election where cand_sex='F'group by year;
+select year,count(*)
+from election where cand_sex='F'group by year;
 
 --2 total candidates who  paricipated in election at each state and year
 select st_name ,year,count(*)
@@ -30,8 +30,8 @@ in uttur pradesh in the year of 2014*/
 
 SELECT PARTYNAME 
 FROM (SELECT PARTYNAME, SUM(TOTVOTPOLL) AS VOTES
-      FROM ELECTION WHERE YEAR=2014 AND ST_NAME='Uttar Pradesh'
-      GROUP BY PARTYNAME
-    )ORDER BY VOTES DESC
-    FETCH FIRST 5 ROWS ONLY;
+FROM ELECTION WHERE YEAR=2014 AND ST_NAME='Uttar Pradesh'
+GROUP BY PARTYNAME
+)ORDER BY VOTES DESC
+FETCH FIRST 5 ROWS ONLY; 
 

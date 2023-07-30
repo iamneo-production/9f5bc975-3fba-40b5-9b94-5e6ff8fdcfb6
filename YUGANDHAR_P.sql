@@ -1,7 +1,7 @@
 
 set timing on;
 
---SQL query to find total count of female participated in each year
+--   SQL query to find total count of female participated in each year
 
 select year,count(*)
 from election where cand_sex='F'group by year;
@@ -19,7 +19,7 @@ from election where partyname='BJP' and year=1987
 group by st_name;
 
 
---4   sql query to find total candidates who participated in the election in each state in the year of 2004
+--4   sql query to find total candidates who participated in the election in each state in the year of 2004 
 select st_name, count(*)
 from election where year=2004
 group by st_name

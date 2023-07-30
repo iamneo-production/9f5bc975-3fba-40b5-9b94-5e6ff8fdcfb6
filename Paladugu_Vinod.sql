@@ -1,10 +1,9 @@
 
-
 SET TIMING ON;
 --query 1
 select year,count(*) as TOTAL_FEMALE_CANDIDATE
 from election where CAND_SEX='F'
-group by YEAR;
+group by year;
 
 --query 2
 select year,ST_NAME,count(*) as total

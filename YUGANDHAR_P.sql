@@ -10,7 +10,7 @@ set timing on;
 select st_name ,year,count(*)
 from election 
 group by year,st_name
-order by year;
+order by year asc;
 
 --3 sql query to find total votes BJP got in each state in the year of 1987
 

@@ -1,6 +1,6 @@
 CREATE INDEX INDEX_EL ON ELECTION(YEAR);
 
-SET TIMING ON;
+SET TIMING ON;     
 
 --answer for query 1
 select year,count(*) as TOTAL_FEMALE_CANDIDATES

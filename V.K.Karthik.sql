@@ -15,7 +15,7 @@ from election
 where YEAR=1987 and PARTYNAME='BJP'
 group by year;
 
---code  4
+--code   4
 select ST_NAME,COUNT(*) as total
 from election 
 where YEAR=2004

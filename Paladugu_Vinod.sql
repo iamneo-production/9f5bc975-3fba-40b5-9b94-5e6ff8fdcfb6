@@ -6,18 +6,18 @@ group by year
 order by year ASC;
 
 --query:2
-SELECT year,ST_NAME,count(*) as Total
+SELECT year,ST_NAME,count(*) as total
 from Election 
 group by year,ST_NAME;
 
 --query:3
-SELECT ST_NAME,sum(TOTVOTPOLL) as Total_Votes
+SELECT ST_NAME,sum(TOTVOTPOLL) as total_votes
 from Election 
 where YEAR=1987 and PARTYNAME='BJP'
 group by ST_NAME;
 
 --query:4
-SELECT ST_NAME,COUNT(*) as Total_Candidates
+SELECT ST_NAME,COUNT(*) as total_candidates
 from Election 
 where YEAR=2004
 group by ST_NAME

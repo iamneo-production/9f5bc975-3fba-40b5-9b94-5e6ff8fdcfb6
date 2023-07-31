@@ -1,6 +1,6 @@
 set timing on;
 
---   1 SQL query to find total count of female participated in each year
+--    1 SQL query to find total count of female participated in each year
  
  select year,count(*)
  from election where cand_sex='F'group by year;

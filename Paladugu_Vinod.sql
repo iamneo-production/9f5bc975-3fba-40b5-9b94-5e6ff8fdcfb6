@@ -1,6 +1,6 @@
 
 SET TIMING ON;
---query: 1
+--query:1
 SELECT year,count(*) as TOTAL_FEMALE_CANDIDATES
 from Election where CAND_SEX='F'
 group by year

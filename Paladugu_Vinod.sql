@@ -6,7 +6,7 @@ from Election where CAND_SEX='F'
 group by year
 order by year ASC;
 
---query:2
+--query: 2
 SELECT year,ST_NAME,count(*) as Total
 from Election 
 group by year,ST_NAME;

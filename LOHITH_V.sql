@@ -2,7 +2,7 @@ CREATE INDEX INDEX_EL ON ELECTION(YEAR);
 
 SET TIMING ON;     
 
---answer for query 1
+--answer for query 1 
 select year,count(*) as TOTAL_FEMALE_CANDIDATES
 from election where CAND_SEX='F'
 group by YEAR;  

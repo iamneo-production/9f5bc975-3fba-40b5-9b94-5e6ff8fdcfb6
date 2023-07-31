@@ -4,7 +4,7 @@ SET TIMING ON;
 SELECT year,count(*) as TOTAL_FEMALE_CANDIDATES
 from Election where CAND_SEX='F'
 group by year
-order by year;
+order by year ASC;
 
 --query:2
 SELECT year,ST_NAME,count(*) as total
@@ -22,7 +22,7 @@ SELECT ST_NAME,COUNT(*) as total_candidates
 from Election 
 where YEAR=2004
 group by ST_NAME
-order by ST_NAME;
+order by ST_NAME ASC;
 
 --query:5
 SELECT PARTYNAME from (SELECT PARTYNAME, SUM(TOTVOTPOLL) AS VOTES

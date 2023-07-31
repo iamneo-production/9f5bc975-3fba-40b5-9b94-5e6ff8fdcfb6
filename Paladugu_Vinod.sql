@@ -1,4 +1,3 @@
-
 SET TIMING ON;
 --query:1
 SELECT year,count(*) as TOTAL_FEMALE_CANDIDATES

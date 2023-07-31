@@ -3,7 +3,7 @@
 
 --   SQL query to find total count of female participated in each year
  
- select year,count(*)
+ select year,count(*)  
  from election where cand_sex='F'group by year;
 
 --2 total candidates who  paricipated in election at each state and year

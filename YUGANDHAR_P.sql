@@ -1,4 +1,3 @@
-
 set timing on;
 
 --   SQL query to find total count of female participated in each year

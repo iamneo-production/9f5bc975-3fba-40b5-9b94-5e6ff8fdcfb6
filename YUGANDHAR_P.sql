@@ -5,7 +5,7 @@ set timing on;
  
  select year,count(*)
  from election where cand_sex='F'group by year;
-   
+
 --2 total candidates who  paricipated in election at each state and year
 select st_name ,year,count(*)
 from election 
@@ -34,4 +34,3 @@ FROM (SELECT PARTYNAME, SUM(TOTVOTPOLL) AS VOTES
       GROUP BY PARTYNAME
     )ORDER BY VOTES DESC
     FETCH FIRST 5 ROWS ONLY;
-

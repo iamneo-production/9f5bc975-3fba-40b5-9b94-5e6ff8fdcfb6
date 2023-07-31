@@ -1,29 +1,29 @@
 
 
 SET TIMING ON;
---query 1
+--code 1
 select year,count(*) as TOTAL_FEMALE_CANDIDATE
 from election where CAND_SEX='F'
 group by YEAR;
 
---query 2
+--code 2
 select year,ST_NAME,count(*) as total
 from election 
 group by YEAR,ST_NAME;
 
---query 3
+--code 3
 select year,sum(TOTVOTPOLL) as total
 from election 
 where YEAR=1987 and PARTYNAME='BJP'
 group by year;
 
---query 4
+--code 4
 select ST_NAME,COUNT(*) as total
 from election 
 where YEAR=2004
 group by ST_NAME;
 
---query 5
+--code 5
 SELECT PARTYNAME 
 FROM (SELECT PARTYNAME, SUM(TOTVOTPOLL) AS VOTES
       FROM ELECTION WHERE YEAR=2014 AND ST_NAME='Uttar Pradesh'

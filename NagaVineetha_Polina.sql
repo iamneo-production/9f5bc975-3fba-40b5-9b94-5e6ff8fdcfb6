@@ -1,29 +1,29 @@
 --CREATE INDEX INDEX_ELECTION ON ELECTION(YEAR);
 
 SET TIMING ON;
---query 1
+--question 1
 select year,count(*) as TOTAL_FEMALE_CANDIDATE
 from election where CAND_SEX='F'
 group by year;
 
---query 2
+--question 2
 select year,ST_NAME,count(*) as total
 from election 
 group by YEAR,ST_NAME;
 
---query 3
+--question 3
 select year,sum(TOTVOTPOLL) as total
 from election 
 where YEAR=1987 and PARTYNAME='BJP'
 group by year;
 
---query 4
+--question 4
 select ST_NAME,COUNT(*) as total
 from election 
 where YEAR=2004
 group by ST_NAME;
 
---query 5
+--question 5
 SELECT PARTYNAME
 FROM(SELECT PARTYNAME, SUM(TOTVOTPOLL)AS VOTES
 FROM ELECTION WHERE YEAR=2014 AND ST_NAME='Uttar Pradesh'

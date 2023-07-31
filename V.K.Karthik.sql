@@ -1,5 +1,3 @@
-
-
 SET TIMING ON;
 --code  1
 select year,count(*) as TOTAL_FEMALE_CANDIDATE

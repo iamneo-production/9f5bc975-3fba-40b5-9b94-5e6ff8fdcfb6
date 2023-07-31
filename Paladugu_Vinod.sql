@@ -1,24 +1,24 @@
 
 SET TIMING ON;
---query:1
+--query: 1
 SELECT year,count(*) as TOTAL_FEMALE_CANDIDATES
 from Election where CAND_SEX='F'
 group by year
 order by year ASC;
 
 --query:2
-SELECT year,ST_NAME,count(*) as total
+SELECT year,ST_NAME,count(*) as Total
 from Election 
 group by year,ST_NAME;
 
 --query:3
-SELECT ST_NAME,sum(TOTVOTPOLL) as total_votes
+SELECT ST_NAME,sum(TOTVOTPOLL) as Total_Votes
 from Election 
 where YEAR=1987 and PARTYNAME='BJP'
 group by ST_NAME;
 
 --query:4
-SELECT ST_NAME,COUNT(*) as total_candidates
+SELECT ST_NAME,COUNT(*) as Total_Candidates
 from Election 
 where YEAR=2004
 group by ST_NAME

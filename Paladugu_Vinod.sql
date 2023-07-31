@@ -11,7 +11,7 @@ SELECT year,ST_NAME,count(*) as Total
 from Election 
 group by year,ST_NAME;
 
---query:3
+--query: 3
 SELECT ST_NAME,sum(TOTVOTPOLL) as Total_Votes
 from Election 
 where YEAR=1987 and PARTYNAME='BJP'
